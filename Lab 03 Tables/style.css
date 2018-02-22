@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Ultra');
+
+body {
+	background: #FeFeFe;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+tr th:not(:first-child) {
+	background-color: #111111;
+}
+
+hr {
+	width: 30%;
+}
+
+#title {
+	margin: 1em 0 0.5em 0;
+	text-align: left;
+	color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
+}
+input {
+	padding: 5px;
+	margin: 3px;
+	font-family: Georgia;
+	border: none;
+	border-radius: 2px;
+}
+input[type="button"] {
+	background-color: #6983a9;
+	color: #ffffff;
+	box-shadow: .5px .5px #8C8C8C;
+}
+
+#welcome {
+	padding: 15px 0;
+	font-family: 'Century Gothic';
+	font-size: x-large;
+	color: #56a4b9;
+	text-shadow: .5px .5px 0px #fff, 1px 1px 1px rgba(0,0,0,0.15);
+}
+
+#section {
+	font-family: 'Garamond';
+	color: #4a4a4a;
+    display: inline-block;
+    font-size: 2rem;
+    padding-left: 10px;
+    border-left: 4px solid #6983a9;
+    margin: 20px 0;
+}
+
+#profile {
+	text-align: center;
+	width: 70%;
+	padding: 50px;
+	background-color: #e7e8e1;
+}
+
+img {
+	width: 90%;
+	height: auto;
+}
+
+td[id="about"], td[id="tagline"] {
+	padding: 0 10%;
+}
+
+#tagline {
+	font-family: 'Century Gothic';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#about {
+    color: #777;
+    font-size: 16px;
+    padding-top: 0;
+    line-height: 24px;
+}
+
+#projects {
+	width: 100%;
+}
+
+#projects td {
+	text-align: center;
+	height: 350px;
+	width: 50%;
+}
+
+#projects a {
+	padding: 10px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#cogman {
+	background:url(https://rhasnainanwar.github.io//../images/22527994_325086514630218_5562947888814592548_n.jpg) no-repeat;
+}
+
+#ppm {
+	background:url(https://sdtimes.com/wp-content/uploads/2016/06/0615.sdt-microsoft.jpeg) no-repeat;
+}
+
+#algo {
+	background:url(https://www.theexplode.com/wp-content/uploads/2017/08/if-youre-new-to-coding-this-is-the-programming-language-you-should-learn-first.jpg) no-repeat;
+}
