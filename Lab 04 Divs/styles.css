@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Ultra');
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#title {
+	margin: .5em 0 0.5em 0.5em;
+	text-align: left;
+	color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
+	float: left;
+}
+
+.nav, input {
+	background-color: #3c3c3c;
+	margin: 1em 0.5em 0.5em 0;
+	padding: 5px 20px;
+	border-color: #777;
+	font-family: 'Century Gothic';
+}
+
+.nav {
+	height: 40px;
+    float: right;
+}
+
+input {
+	float: right;
+	font-size: 14px;
+	height: 25px;
+	color: #ccc;
+}
+
+.section {
+	clear: both;
+	margin-left: 1em;
+	margin-top: 25px;
+}
+
+.head {
+	width: 30%;
+}
+
+.head h1 {
+	padding: 5px 0;
+	font-family: 'Century Gothic';
+	font-size: xx-large;
+	color: #56a4b9;
+	text-shadow: .5px .5px 0px #fff, 1px 1px 1px rgba(0,0,0,0.15);
+}
+.head .bef {
+	margin-left: 20%;
+}
+
+.head .af {
+	margin-right: 20%;
+}
+
+.main {
+	text-align: center;
+	height: 350px;
+	width: 40%;
+	float: right;
+	
+}
+
+.main:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.section a {
+	padding: 10px;
+	background-color: rgba(0,0,0,0.6);
+	font-family: 'Century Gothic';
+}
+
+.section a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	margin-top: 20px;
+	position: relative;
+	bottom: 0;
+	clear: right;
+	background-color: #444;
+	height: 200px;
+	padding: 2% 10%;
+}
+
+.min {
+	height: 350px;
+	width: 58%;
+}
+
+.min a {
+		position: absolute;
+	margin: 200px auto auto 45px;
+}
+.main a {
+	position: absolute;
+	margin: 200px auto auto -260px;
+}
+
+#min1 {
+	background:url(http://ichef.bbci.co.uk/wwfeatures/wm/live/1600_640/images/live/p0/5z/n8/p05zn8dm.jpg) center no-repeat;
+	background-size: cover;
+}
+#main1 {
+	background:url(http://ichef.bbci.co.uk/wwfeatures/wm/live/130_73/images/live/p0/5z/m8/p05zm8s3.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#main2 {
+	background:url(https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/89B4/production/_100225253_gettyimages-925575868.jpg) center no-repeat;
+	background-size: cover;
+}
+#min2 {
+	background:url(https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/4AD0/production/_100225191_jones.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#main3 {
+	background:url(https://ichef-1.bbci.co.uk/news/976/cpsprodpb/B339/production/_100218854_hi045212813.jpg) center no-repeat;
+	background-size: cover;
+}
+#min3 {
+	background:url(https://ichef-1.bbci.co.uk/news/624/cpsprodpb/BEAC/production/_100221884_weather_warning_uk_640_v6-nc.png) center no-repeat;
+	background-size: cover;
+}
