@@ -1,0 +1,114 @@
+<enrollments>
+<students>
+	<degree>
+		<student sid="995435245" name="Ali" degree="BSc" status="degree student">
+			<address st_no="406" st_name="Main" city="Toronto" prov="ON"/>
+			<phone>416-4245979</phone>
+			<enrolled_courses cid="c1" />
+			<enrolled_courses cid="c3" />
+			<enrolled_courses cid="c4" />
+			<enrolled_courses cid="c5" />
+		</student>
+		<student sid="998112455" name="Fernando" degree="BEng" status="degree student">
+			<address st_no="101" st_name="Avenue" city="Montreal" prov="QC"/>
+			<enrolled_courses cid="c2" />
+			<enrolled_courses cid="c4" />
+			<enrolled_courses cid="c8" />
+			<enrolled_courses cid="c10" />
+		</student>
+			<student sid="993457622" name="Jason" degree="BA" status="degree student">
+			<address st_no="32" st_name="Main" city="Winnipeg" prov="MB"/>
+			<phone>204-4562983</phone>
+			<enrolled_courses cid="c1" />
+			<enrolled_courses cid="c2" />
+			<enrolled_courses cid="c3" />
+		</student>
+		<student sid="996112321" name="Jun" degree="BEng" status="degree student">
+			<address st_no="160" st_name="Pembina" city="Winnipeg" prov="MB"/>
+			<phone>204-7893242</phone>
+			<enrolled_courses cid="c5" />
+			<enrolled_courses cid="c7" />
+			<enrolled_courses cid="c10" />
+		</student>
+		<student sid="995987345" name="Lee" degree="BSc" status="degree student">
+			<address st_no="35" st_name="Charlse" city="Toronto" prov="ON"/>
+			<phone>647-9982342</phone>
+			<enrolled_courses cid="c3" />
+			<enrolled_courses cid="c4" />
+			<enrolled_courses cid="c7" />
+		</student>
+		<student sid="997821345" name="Leung" degree="BSc" status="degree student">
+			<address st_no="11" st_name="Yong" city="Toronto" prov="ON"/>
+		</student>
+	</degree>
+
+	<special>
+		<student sid="995267842" name="Bob" status="Special student">
+			<address st_no="12" st_name="Charles" city="Ottawa" prov="ON"/>
+			<phone>613-5345660</phone>
+			<enrolled_courses cid="c3" />
+			<enrolled_courses cid="c4" />
+			<enrolled_courses cid="c5" />
+		</student>
+		<student sid="997458623" name="Carlos" status="Special student">
+			<address st_no="5" st_name="King" city="Oshawa" prov="ON"/>
+			<phone>905-2348638</phone>
+		</student>
+		<student sid="996453222" name="Mark" status="Special student">
+			<address st_no="30" st_name="University" city="Ottawa" prov="ON"/>
+			<phone>613-4561190</phone>
+			<enrolled_courses cid="c1" />
+			<enrolled_courses cid="c5" />
+			<enrolled_courses cid="c6" />
+			<enrolled_courses cid="c7" />
+		</student>
+		<student sid="997424563" name="Maria" status="Special student">
+			<address st_no="11" st_name="Queen" city="Ottawa" prov="ON"/>
+			<enrolled_courses cid="c5" />
+		</student>
+		<student sid="997345632" name="Nicolas" status="Special student">
+			<address st_no="13" st_name="Cumberland" city="Ottawa" prov="ON"/>
+			<phone>613-8932456</phone>
+			<enrolled_courses cid="c9" />
+			<enrolled_courses cid="c10" />
+		</student>
+	</special>
+</students>
+
+<courses>
+	<course cid="c1" name="Introduction to Databases" dept="CS">
+		<allowed>degree student</allowed>
+		<allowed>Special student</allowed>
+	</course>
+	<course cid="c2" name="Numerical Methods" dept="CS">
+		<allowed>degree student</allowed>
+		<allowed>Special student</allowed>
+	</course>
+	<course cid="c3" name="Operating Systems" dept="CS">
+		<allowed>degree student</allowed>
+	</course>
+	<course cid="c4" name="Computer Graphics" dept="CS">
+		<allowed>degree student</allowed>
+	</course>
+	<course cid="c5" name="Calculus Sci I" dept="MAT">
+		<allowed>Special student</allowed>
+	</course>
+	<course cid="c6" name="Complex Variables" dept="MAT">
+		<allowed>degree student</allowed>
+		<allowed>Special student</allowed>
+	</course>
+	<course cid="c7" name="Groups and Symmetry" dept="MAT">
+		<allowed>degree student</allowed>
+	</course>
+	<course cid="c8" name="Introduction to Economics" dept="ECO">
+		<allowed>degree student</allowed>
+		<allowed>Special student</allowed>
+	</course>
+	<course cid="c9" name="Microeconomic Theory" dept="ECO">
+		<allowed>degree student</allowed>
+	</course>
+	<course cid="c10" name="Energy and Resource" dept="ECO">
+		<allowed>degree student</allowed>
+	</course>
+</courses>
+</enrollments>

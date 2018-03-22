@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE student [
+	<!ELEMENT student (firstName, lastName, id, plan)>
+		<!ELEMENT firstName (#PCDATA)>
+		<!ELEMENT lastName (#PCDATA)>
+		<!ELEMENT id (#PCDATA)>
+		<!ELEMENT plan (courses+)>
+		<!ELEMENT courses (course+)>
+			<!ELEMENT course (name, shortName, record*)>
+				<!ELEMENT name (#PCDATA)>
+				<!ELEMENT shortName (#PCDATA)>
+				<!ELEMENT record (grade, date)>
+					<!ELEMENT grade (#PCDATA)>
+					<!ELEMENT date (#PCDATA)>
+	<!ATTLIST  courses year CDATA "">
+]>

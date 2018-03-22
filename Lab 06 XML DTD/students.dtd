@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE enrollments [
+	<!ELEMENT enrollments (students, courses)>
+	<!ELEMENT students (degree, special)>
+		<!ELEMENT degree (student+)>
+		<!ELEMENT special (student+)>
+			<!ELEMENT student (address, (phone?), (enrolled_courses*))>
+			<!ELEMENT address EMPTY>
+			<!ELEMENT phone (#PCDATA)>
+			<!ELEMENT enrolled_courses EMPTY>
+
+	<!ELEMENT courses (course+)>
+		<!ELEMENT course (allowed+)>
+		<!ELEMENT allowed (#PCDATA)>
+
+	<!ATTLIST enrolled_courses cid IDREF #REQUIRED>
+
+	<!ATTLIST address st_no CDATA #REQUIRED>
+	<!ATTLIST address st_name CDATA #REQUIRED>
+	<!ATTLIST address city CDATA #REQUIRED>
+	<!ATTLIST address prov CDATA #REQUIRED>
+
+	<!ATTLIST student sid CDATA #REQUIRED>
+	<!ATTLIST student name CDATA #REQUIRED>
+	<!ATTLIST student degree CDATA #IMPLIED>
+	<!ATTLIST student status CDATA #REQUIRED>
+
+	<!ATTLIST course cid ID #REQUIRED>
+	<!ATTLIST course name CDATA #REQUIRED>
+	<!ATTLIST course dept CDATA #REQUIRED>
+]>
