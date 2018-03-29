@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>JavaScript Calculator</h1>
+<table>
+  <tr>
+    <td><button onclick="clearInput()"><b>C</b></button></td>
+    <td colspan="5" id="bar"></td>
+  </tr>
+  <tr>
+    <td><button onclick="clmem()">MC</button></td>
+    <td><button onclick="append(this)">1</button></td>
+    <td><button onclick="append(this)">2</button></td>
+    <td><button onclick="append(this)">3</button></td>
+    <td><button onclick="append(this)">+</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="store()">MS</button></td>
+    <td><button onclick="append(this)">4</button></td>
+    <td><button onclick="append(this)">5</button></td>
+    <td><button onclick="append(this)">6</button></td>
+    <td><button onclick="append(this)">-</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="restore()">MR</button></td>
+    <td><button onclick="append(this)">7</button></td>
+    <td><button onclick="append(this)">8</button></td>
+    <td><button onclick="append(this)">9</button></td>
+    <td><button onclick="append(this)">x</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="mplus()">M+</button></td>
+    <td><button onclick="invert()">±</button></td>
+    <td><button onclick="append(this)">0</button></td>
+    <td><button onclick="sqroo()">&radic;</button></td>
+    <td><button onclick="append(this)">/</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="reciprocal()">1/x</button></td>
+    <td><button onclick="append(this)">.0</button></td>
+    <td><button onclick="sq()">x<sup>2</sup></button></td>
+    <td colspan="2"><button onclick="getResult()"><b>=</b></button></td>
+  </tr>
+</table>
+
+<script type="text/javascript" src="calc.js"></script>
+</body>
+</html>
