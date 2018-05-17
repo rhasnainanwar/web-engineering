@@ -1,10 +1,14 @@
 var tar = document.getElementById("bar");
 var m = null;
+var flag = true;
 // append to input expression
 function append(e) {
-	if(tar.innerHTML.substring(tar.innerHTML.length - 2) == ".0")
+	if(e.innerHTML == '.0' && tar.innerHTML.indexOf('.') > -1)
+			return;
+	if(tar.innerHTML.substring(tar.innerHTML.length - 2) == ".0"){
 		tar.innerHTML = tar.innerHTML.substring(0, tar.innerHTML.length - 1) + e.innerHTML;
-	else 
+	}
+	else
 		tar.innerHTML += e.innerHTML;
 }
 

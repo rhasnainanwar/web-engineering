@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AJAX XML</title>
+
+<script src="jquery-3.2.1.js"></script>
+<style type="text/css">
+	table {
+		display: none;
+		width: 35%;
+	}
+	td {
+		padding: 7px;
+	}
+	.error {
+        color: #D8000C;
+        background-color: #FFD2D2;
+        padding: 10px;
+        width: 300px;
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+<input type="type" name="name" id="filename" placeholder="Enter the filename" />
+<button type="button" id='submitButton'>Get my CD collection</button>
+<br><br>
+<table id="datat" border="1" >
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Artist</th>
+			<th>Country</th>
+			<th>Company</th>
+			<th>Price</th>
+			<th>Year</th>
+		</tr>
+		<tbody>
+			
+		</tbody>
+	</thead>
+</table>
+
+<script>
+$(function(){
+	$('#submitButton').on('click', function(){
+		if( $('#filename').val() == "" ){
+			alert("Please enter a filename");
+			return;
+		}
+
+		$.ajax({ 
+	        type: 'GET', 
+	        url: $('#filename').val()+'.xml', 
+	        dataType:'XML', 
+
+	        success: function (data) {
+	        	$('#filename').val("")
+
+
+	            $(data).find("CD").each(function() {
+	            	if( $(this).find("PRICE").attr('currency') == null){
+	            		var prepend = '';
+	            	}
+	            	else {
+	            		var prepend = $(this).find("PRICE").attr('currency');
+	            	}
+	            	var data = '<td>'+ $(this).find("TITLE").text() +'</td>';
+	            	data += '<td>'+ $(this).find("ARTIST").text() +'</td>';
+	            	data += '<td>'+ $(this).find("COUNTRY").text() +'</td>';
+	            	data += '<td>'+ $(this).find("COMPANY").text() +'</td>';
+	            	data += '<td>'+ prepend + $(this).find("PRICE").text() +'</td>';
+	            	data += '<td>'+ $(this).find("YEAR").text() +'</td>';
+	            	$('#datat tbody').append('<tr>'+ data +'</tr>');
+	            });
+
+		        $('#datat').slideDown(3000);
+		        $('#submitButton').attr("disabled", "disabled");
+		        $('#filename').attr("disabled", "disabled");
+	        },
+
+	        error: function(){
+	        	alert("Unable to open file, check file name");
+	        }
+	    });
+	});
+});
+
+</script>
+
+</body>
+</html>
