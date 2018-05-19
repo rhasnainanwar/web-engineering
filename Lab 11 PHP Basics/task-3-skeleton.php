@@ -16,19 +16,19 @@
   </head>
   <body>   
   <h3>Chess Board - PHP Nested Loops</h3>
-      <?php
-      	$size  = 8;
-      	$bgs = ['black', 'white'];
-      	echo "<table>";
-      	for ($i=0; $i < $size; $i++) {
-      		echo "<tr>";
-      		for ($j=0; $j < $size; $j++) { 
-      			echo "<td bgcolor='".$bgs[ ($i + $j) % 2 ]."'></td>";
-      		}
-      		echo "</tr>";
-      	}
-      	echo "</table>";
-      ?>
+  <?php
+  	$size  = 8;
+  	$bgs = ['black', 'white'];
+  	echo "<table>";
+  	for ($i=0; $i < $size; $i++) {
+  		echo "<tr>";
+  		for ($j=0; $j < $size; $j++) { 
+  			echo "<td bgcolor='".$bgs[ ($i + $j) % 2 ]."'></td>";
+  		}
+  		echo "</tr>";
+  	}
+  	echo "</table>";
+  ?>
   </table>  
   </body>  
   </html> 

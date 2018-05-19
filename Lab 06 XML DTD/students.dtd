@@ -13,19 +13,22 @@
 	<!ELEMENT courses (course+)>
 		<!ELEMENT course (allowed+)>
 		<!ELEMENT allowed (#PCDATA)>
-
+	<!-- Enrolled Course Attributes -->
 	<!ATTLIST enrolled_courses cid IDREF #REQUIRED>
 
+	<!-- Address Attributes -->
 	<!ATTLIST address st_no CDATA #REQUIRED>
 	<!ATTLIST address st_name CDATA #REQUIRED>
 	<!ATTLIST address city CDATA #REQUIRED>
 	<!ATTLIST address prov CDATA #REQUIRED>
 
+	<!-- Student Attributes -->
 	<!ATTLIST student sid CDATA #REQUIRED>
 	<!ATTLIST student name CDATA #REQUIRED>
 	<!ATTLIST student degree CDATA #IMPLIED>
 	<!ATTLIST student status CDATA #REQUIRED>
 
+	<!-- Course Attributes -->
 	<!ATTLIST course cid ID #REQUIRED>
 	<!ATTLIST course name CDATA #REQUIRED>
 	<!ATTLIST course dept CDATA #REQUIRED>

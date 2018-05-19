@@ -3,24 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>AJAX JSON</title>
-
-<script src="jquery-3.2.1.js"></script>
-<style type="text/css">
-	table {
-		display: none;
-		width: 45%;
-	}
-	td {
-		padding: 7px;
-	}
-	.error {
-        color: #D8000C;
-        background-color: #FFD2D2;
-        padding: 10px;
-        width: 300px;
-        display: none;
-    }
-</style>
+<link rel="stylesheet" href="assets/base.css" />
 </head>
 
 <body>
@@ -44,44 +27,7 @@
 	</thead>
 </table>
 
-<script>
-$(function(){
-	$('#submitButton').on('click', function(){
-		if( $('#filename').val() == "" ){
-			alert("Please enter a filename");
-			return;
-		}
-
-		$.ajax({
-	        type: 'GET',
-	        url: $('#filename').val()+'.json',
-	        dataType:'json',
-
-	        success: function (data) {
-	        	$('#filename').val("")
-	            $.each(data.employees, function(i, employee) {
-	            	var data = '<td>'+ employee.name +'</td>';
-	            	data += '<td>'+ employee.designation +'</td>';
-	            	data += '<td>'+ employee.salary +'</td>';
-	            	data += '<td>'+ employee.joining_date +'</td>';
-	            	data += '<td>'+ employee.office +'</td>';
-	            	data += '<td>'+ employee.extension +'</td>';
-	            	$('#datat tbody').append('<tr>'+ data +'</tr>');
-		        });
-
-		        $('#datat').slideDown(3000);
-		        $('#submitButton').attr("disabled", "disabled");
-		        $('#filename').attr("disabled", "disabled");
-	        },
-
-	        error: function(){
-	        	alert("Unable to open file, check file name");
-	        }
-	    });
-	});
-});
-
-</script>
-
+<script src="../Lab 08 jQuery/js/jquery-3.2.1.js"></script>
+<script src="assets/t01.js"></script>
 </body>
 </html>

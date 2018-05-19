@@ -3,67 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>jQuery Add / Remove Table Rows Dynamically</title>
-<style type="text/css">
-    form{
-        margin: 20px 0;
-    }
-    form input, button{
-        padding: 5px;
-    }
-    table{
-        width: 100%;
-        margin-bottom: 20px;
-		border-collapse: collapse;
-    }
-    table, th, td{
-        border: 1px solid #cdcdcd;
-    }
-    table th, table td{
-        padding: 10px;
-        text-align: left;
-    }
-    #error {
-        color: #D8000C;
-        background-color: #FFD2D2;
-        padding: 10px;
-        width: 300px;
-        display: none;
-    }
-</style>
-<script src="js/jquery-1.11.0.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
+<link rel="stylesheet" href="css/t04.css" />
 
-        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-
-        $('.add-row').click(function() {
-            var row = '<tr><td><input type="checkbox" name="record"></td>';
-            // get all the inputs into an array.
-            var $inputs = $('#dataForm input');
-
-            if($($inputs[0]).val() != "" && $($inputs[1]).val() != "" && emailReg.test($($inputs[1]).val())){
-                
-                row += '<td>'+ $($inputs[0]).val() +'</td>';
-                row += '<td>'+ $($inputs[1]).val() +'</td>';
-                row += '</tr>';
-
-                $('tbody').append(row);
-
-                $('#error').fadeOut();
-            }
-            else {
-                $('#error').fadeIn();   
-            }
-            $('#dataForm')[0].reset();
-        });
-
-        $('.delete-row').click(function() {
-            $('input:checked').each(function() {
-                $(this).parents('tr').remove();
-            });
-        });
-    });
-</script>
 </head>
 <body>
     <div id="error">
@@ -91,5 +32,8 @@
         </tbody>
     </table>
     <button type="button" class="delete-row">Delete Row</button>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/t04.js"></script>
 </body> 
 </html>                                		
